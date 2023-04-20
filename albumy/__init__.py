@@ -128,12 +128,12 @@ def register_commands(app):
         click.echo('Done.')
 
     @app.cli.command()
-    @click.option('--user', default=10, help='Quantity of users, default is 10.')
-    @click.option('--follow', default=30, help='Quantity of follows, default is 30.')
-    @click.option('--photo', default=30, help='Quantity of photos, default is 30.')
-    @click.option('--tag', default=20, help='Quantity of tags, default is 20.')
-    @click.option('--collect', default=50, help='Quantity of collects, default is 50.')
-    @click.option('--comment', default=100, help='Quantity of comments, default is 100.')
+    @click.option('--user', default=0, help='Quantity of users, default is 0.')
+    @click.option('--follow', default=0, help='Quantity of follows, default is 0.')
+    @click.option('--photo', default=0, help='Quantity of photos, default is 0.')
+    @click.option('--tag', default=0, help='Quantity of tags, default is 0.')
+    @click.option('--collect', default=0, help='Quantity of collects, default is 0.')
+    @click.option('--comment', default=0, help='Quantity of comments, default is 0.')
     def forge(user, follow, photo, tag, collect, comment):
         """Generate fake data."""
 
