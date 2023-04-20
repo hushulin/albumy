@@ -77,7 +77,7 @@ def resize_image(image, filename, base_width):
     img = img.resize((base_width, h_size), PIL.Image.ANTIALIAS)
 
     filename += current_app.config['ALBUMY_PHOTO_SUFFIX'][base_width] + ext
-    img.save(os.path.join(current_app.config['ALBUMY_UPLOAD_PATH'], filename), optimize=True, quality=85)
+    img.save(os.path.join(current_app.config['ALBUMY_UPLOAD_PATH'], filename), optimize=True, quality=40)
     return filename
 
 
